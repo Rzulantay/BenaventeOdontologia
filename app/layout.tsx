@@ -4,7 +4,8 @@ import { site } from "@/data/site";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://benaventeodontologia.cl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
