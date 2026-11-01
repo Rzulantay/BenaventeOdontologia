@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const baseUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://benaventeodontologia.cl";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.benaventeodontologia.cl";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
