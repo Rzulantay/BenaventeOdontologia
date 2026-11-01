@@ -7,6 +7,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { site } from "@/data/site";
+import { PracticeMap } from "@/components/practice-map";
 
 export function HeroSection() {
   return (
@@ -53,9 +54,7 @@ export function HeroSection() {
         <a href="#sobre-mi" className="scroll-cue" aria-label="Desplazarse hacia abajo">
           <ArrowDown size={16} aria-hidden="true" />
         </a>
-        <span className="hero-image-label">
-          Fotografía de atención · autorización por confirmar
-        </span>
+        <span className="hero-image-label">Atención odontológica</span>
       </div>
       <div className="hero-index" aria-hidden="true">
         SB <span>·</span> 2025
@@ -262,10 +261,7 @@ export function GallerySection() {
             <em>con transparencia.</em>
           </h2>
         </div>
-        <p>
-          Los casos clínicos se incorporarán únicamente con autorización
-          expresa de cada paciente y resguardo de su privacidad.
-        </p>
+        <p>Un espacio para conocer casos clínicos y resultados documentados.</p>
       </div>
       <div className="gallery-empty">
         <div className="gallery-empty-mark" aria-hidden="true">
@@ -273,10 +269,9 @@ export function GallerySection() {
         </div>
         <span className="eyebrow">Un espacio reservado</span>
         <p>
-          No hay casos publicados. Las imágenes clínicas se agregarán cuando
-          exista autorización correspondiente.
+          Aún no hay casos clínicos publicados.
         </p>
-        <span className="gallery-caption">Casos reales · Consentimiento informado</span>
+        <span className="gallery-caption">Galería clínica</span>
       </div>
     </section>
   );
@@ -335,11 +330,7 @@ export function ContactSection() {
               <ArrowUpRight size={14} aria-hidden="true" />
             </a>
           </div>
-          <div className="map-placeholder">
-            <span className="map-lines" aria-hidden="true" />
-            <MapPin size={22} aria-hidden="true" />
-            <span>Atención en {site.location}</span>
-          </div>
+          <PracticeMap />
         </div>
       </div>
       <div className="contact-form-note section-wrap" id="contacto-form">

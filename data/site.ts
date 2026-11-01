@@ -1,9 +1,43 @@
+export type PracticeLocation = {
+  id: string;
+  name: string;
+  latitude: number;
+  longitude: number;
+};
+
+export const practiceLocations: PracticeLocation[] = [
+  {
+    id: "vina-del-mar",
+    name: "Viña del Mar",
+    latitude: -33.0246,
+    longitude: -71.5518,
+  },
+  {
+    id: "renaca",
+    name: "Reñaca",
+    latitude: -32.9797,
+    longitude: -71.5436,
+  },
+  {
+    id: "concon",
+    name: "Concón",
+    latitude: -32.923,
+    longitude: -71.527,
+  },
+  {
+    id: "ovalle",
+    name: "Ovalle",
+    latitude: -30.6011,
+    longitude: -71.199,
+  },
+];
+
 export const site = {
   name: "Sebastián Benavente Navea",
   title: "Odontología · Estética facial",
   description:
     "Una mirada integral a la salud bucal, la estética y el bienestar. Conoce la propuesta profesional de Sebastián Benavente Navea.",
-  location: "Viña del Mar / Reñaca / Concón / Ovalle ",
+  location: "Viña del Mar / Reñaca / Concón / Ovalle",
   email: "s.benavente@hotmail.es",
   phone: "+569 84553536",
   social: {
