@@ -4,6 +4,7 @@ import "./globals.css";
 import { site } from "@/data/site";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.benaventeodontologia.cl";
@@ -43,6 +44,7 @@ export default function RootLayout({
         <SiteHeader />
         <main id="contenido">{children}</main>
         <SiteFooter />
+        <Analytics />
       </body>
     </html>
   );
